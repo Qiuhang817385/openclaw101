@@ -3703,6 +3703,62 @@ export const resources: Resource[] = [
     category: 'deep-dive',
     tags: ['Medium', '历史回顾', '品牌演变', 'OpenAI', '社区视角'],
   },
+  // ============ New — Week of 2026-03-01（本次更新）============
+
+  // -- Deep Dive (Security - 0-Day) --
+  {
+    title: 'The Hacker News — ClawJacked：恶意网站可通过 WebSocket 劫持本地 OpenClaw Agent',
+    desc: 'ClawJacked 漏洞披露：攻击者利用本地 OpenClaw WebSocket（TCP 18789）实施 DNS 重绑定攻击，可搜索 Slack 历史、读私信、窃取文件并执行任意 Shell 命令；升级到 v2026.2.25+ 修复',
+    url: 'https://thehackernews.com/2026/02/clawjacked-flaw-lets-malicious-sites.html',
+    source: 'The Hacker News',
+    lang: 'en',
+    category: 'deep-dive',
+    featured: true,
+    tags: ['ClawJacked', '安全', 'WebSocket', 'DNS重绑定', 'v2026.2.25', '必读'],
+  },
+  {
+    title: 'CyberSecurity News — OpenClaw 0-Click 漏洞：恶意网站可无感劫持开发者本地 AI Agent',
+    desc: '0-Click 漏洞详细分析：不需用户点击，浏览器访问恶意页面即触发本地 OpenClaw 实例被接管；同期披露日志中毒漏洞（公开实例 TCP 18789），立即升级至 v2026.2.25+',
+    url: 'https://cybersecuritynews.com/openclaw-0-click-vulnerability/',
+    source: 'CyberSecurity News',
+    lang: 'en',
+    category: 'deep-dive',
+    featured: true,
+    tags: ['0-Click漏洞', '安全', '日志中毒', 'v2026.2.25', '紧急升级'],
+  },
+
+  // -- Deep Dive (Comparison & Analysis) --
+  {
+    title: 'ClaudeFa.st — OpenClaw vs Claude Code: Complete Comparison Guide (2026)',
+    desc: 'OpenClaw vs Claude Code 深度横评：持久记忆与主动性 vs 代码专精、技能扩展 vs MCP 生态、安全风险对比。Palo Alto Networks 称 OpenClaw 为"2026 年最大潜在内部威胁"；包含适用场景决策树',
+    url: 'https://claudefa.st/blog/tools/extensions/openclaw-vs-claude-code',
+    source: 'ClaudeFa.st',
+    lang: 'en',
+    category: 'deep-dive',
+    featured: true,
+    tags: ['对比选型', 'Claude Code', 'Palo Alto', '安全风险', '决策指南'],
+  },
+  {
+    title: 'Medium CodeX — The Clawdbot Phenomenon: 为何 Mac Mini 全球断货？',
+    desc: '社会现象深度报道：2026 年初苹果门店 Mac Mini 连续缺货，数万开发者为跑 OpenClaw 而抢购；还原这场"逃离大厂 AI 订阅"的集体行动，以及 OpenAI 收购 ClawdBot 的后续影响',
+    url: 'https://medium.com/codex/why-thousands-are-buying-mac-minis-to-escape-big-tech-ai-subscriptions-forever-clawdbot-10c970c72404',
+    source: 'Medium / CodeX',
+    lang: 'en',
+    category: 'deep-dive',
+    tags: ['Mac Mini断货', '社会现象', '隐私优先', 'OpenAI', '深度报道'],
+  },
+
+  // -- Use Cases --
+  {
+    title: 'QuantoSei — OpenClaw AI 自动化：营销提效与商业变现完整指南',
+    desc: '营销场景落地实战：OpenClaw 自动化内容发布、客户沟通和销售漏斗，含具体配置示例和收益测算，适合中小企业主和独立营销人',
+    url: 'https://news.quantosei.com/2026/02/28/how-to-automate-marketing-with-openclaw-and-make-money/',
+    source: 'QuantoSei',
+    lang: 'en',
+    category: 'use-cases',
+    tags: ['营销自动化', '商业变现', '内容发布', '销售漏斗'],
+  },
+
 ];
 
 export function getResourcesByCategory(cat: ResourceCategory): Resource[] {
