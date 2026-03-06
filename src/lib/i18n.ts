@@ -3,7 +3,7 @@ import zh from '@/locales/zh.json';
 
 export type Locale = 'en' | 'zh';
 
-export const locales: Locale[] = ['en', 'zh'];
+export const locales: Locale[] = ['zh', 'en'];
 export const defaultLocale: Locale = 'zh';
 
 const dictionaries = {
