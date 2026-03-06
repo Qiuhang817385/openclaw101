@@ -43,23 +43,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     7: { en: 'Advanced Techniques & Future Outlook', zh: '进阶玩法 & 未来展望' },
   };
   
-  const title = `Day ${dayNum}: ${titles[dayNum]?.en || ''} | OpenClaw 101`;
+  const title = `Day ${dayNum}: ${titles[dayNum]?.en || ''} | MyClaw`;
   
   return {
     title,
     description: data.frontmatter.description,
     alternates: {
-      canonical: `https://openclaw101.dev/day/${day}`,
+      canonical: `https://openclaw.meetai.fun/day/${day}`,
       languages: {
-        'en': `https://openclaw101.dev/day/${day}`,
-        'zh': `https://openclaw101.dev/zh/day/${day}`,
+        'en': `https://openclaw.meetai.fun/day/${day}`,
+        'zh': `https://openclaw.meetai.fun/zh/day/${day}`,
       },
     },
     openGraph: {
       title,
       description: data.frontmatter.description,
       type: 'article',
-      url: `https://openclaw101.dev/day/${day}`,
+      url: `https://openclaw.meetai.fun/day/${day}`,
     },
   };
 }
@@ -77,7 +77,7 @@ export default async function DayPage({ params }: Props) {
   const nextDay = dayNum < 7 ? dayNum + 1 : null;
   
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-950">
+    <main className="min-h-screen bg-gray-50">
       <DayContent 
         day={dayNum}
         content={data.content}

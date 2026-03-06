@@ -14,8 +14,8 @@
   <circle cx='100' cy='100' r='200' fill='rgba(59,130,246,0.08)'/>
   <circle cx='1100' cy='530' r='250' fill='rgba(16,185,129,0.06)'/>
   <rect x='100' y='290' width='80' height='4' rx='2' fill='url(#accent)'/>
-  <text x='100' y='260' font-family='system-ui,-apple-system,sans-serif' font-size='72' font-weight='900' fill='white'>OpenClaw 101</text>
+  <text x='100' y='260' font-family='system-ui,-apple-system,sans-serif' font-size='72' font-weight='900' fill='white'>MyClaw</text>
   <text x='100' y='350' font-family='system-ui,-apple-system,sans-serif' font-size='32' fill='rgba(255,255,255,0.6)'>从零开始，7天掌握你的AI私人助理</text>
-  <text x='100' y='420' font-family='system-ui,-apple-system,sans-serif' font-size='22' fill='rgba(255,255,255,0.35)'>openclaw101.dev</text>
+  <text x='100' y='420' font-family='system-ui,-apple-system,sans-serif' font-size='22' fill='rgba(255,255,255,0.35)'>openclaw.meetai.fun</text>
   <text x='100' y='520' font-size='48'>🐾</text>
 </svg>

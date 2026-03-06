@@ -3,17 +3,17 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Home -->
   <url>
-    <loc>https://openclaw101.dev/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh"/>
+    <loc>https://openclaw.meetai.fun/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/zh</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh"/>
+    <loc>https://openclaw.meetai.fun/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -21,17 +21,17 @@
 
   <!-- Resources -->
   <url>
-    <loc>https://openclaw101.dev/resources</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/resources"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/resources"/>
+    <loc>https://openclaw.meetai.fun/resources</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/resources"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/resources"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/zh/resources</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/resources"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/resources"/>
+    <loc>https://openclaw.meetai.fun/zh/resources</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/resources"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/resources"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -39,57 +39,57 @@
 
   <!-- 7-Day Tutorial - English -->
   <url>
-    <loc>https://openclaw101.dev/day/1</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/1"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/1"/>
+    <loc>https://openclaw.meetai.fun/day/1</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/1"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/1"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/day/2</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/2"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/2"/>
+    <loc>https://openclaw.meetai.fun/day/2</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/2"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/2"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/day/3</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/3"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/3"/>
+    <loc>https://openclaw.meetai.fun/day/3</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/3"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/3"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/day/4</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/4"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/4"/>
+    <loc>https://openclaw.meetai.fun/day/4</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/4"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/4"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/day/5</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/5"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/5"/>
+    <loc>https://openclaw.meetai.fun/day/5</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/5"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/5"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/day/6</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/6"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/6"/>
+    <loc>https://openclaw.meetai.fun/day/6</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/6"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/6"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/day/7</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/7"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/7"/>
+    <loc>https://openclaw.meetai.fun/day/7</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/7"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/7"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -97,57 +97,57 @@
 
   <!-- 7-Day Tutorial - Chinese -->
   <url>
-    <loc>https://openclaw101.dev/zh/day/1</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/1"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/1"/>
+    <loc>https://openclaw.meetai.fun/zh/day/1</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/1"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/1"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/zh/day/2</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/2"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/2"/>
+    <loc>https://openclaw.meetai.fun/zh/day/2</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/2"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/2"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/zh/day/3</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/3"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/3"/>
+    <loc>https://openclaw.meetai.fun/zh/day/3</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/3"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/3"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/zh/day/4</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/4"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/4"/>
+    <loc>https://openclaw.meetai.fun/zh/day/4</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/4"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/4"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/zh/day/5</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/5"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/5"/>
+    <loc>https://openclaw.meetai.fun/zh/day/5</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/5"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/5"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/zh/day/6</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/6"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/6"/>
+    <loc>https://openclaw.meetai.fun/zh/day/6</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/6"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/6"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://openclaw101.dev/zh/day/7</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw101.dev/day/7"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw101.dev/zh/day/7"/>
+    <loc>https://openclaw.meetai.fun/zh/day/7</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw.meetai.fun/day/7"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://openclaw.meetai.fun/zh/day/7"/>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

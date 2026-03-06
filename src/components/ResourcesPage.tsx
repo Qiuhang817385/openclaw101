@@ -8,8 +8,6 @@ import {
   type Resource,
   type ResourceCategory,
 } from '@/data/resources';
-import ConsultButton from './ConsultButton';
-
 /* ── i18n texts ── */
 const texts = {
   en: {
@@ -147,7 +145,7 @@ const sourceDots: Record<string, string> = {
   '腾讯新闻': '#0052d9',
   'Reddit': '#ff4500',
   'Substack': '#ff6719',
-  'OpenClaw 101': '#2563eb',
+  'MyClaw': '#2563eb',
   'Creator Economy': '#7c3aed',
   'NxCode': '#0ea5e9',
   'Scientific American': '#000000',
@@ -323,7 +321,7 @@ export default function ResourcesPage({ locale }: ResourcesPageProps) {
         <div className="absolute bottom-0 left-20 w-48 h-48 rounded-full blur-3xl" style={{ background: 'rgba(16, 185, 129, 0.1)' }} />
 
         <div className="relative max-w-5xl mx-auto px-4 pt-20 pb-14">
-          <a href={homeUrl} className="inline-flex items-center gap-1.5 text-sm mb-8 hover:text-white transition-colors" style={{ color: 'rgba(255,255,255,0.5)' }}>
+          <a href={homeUrl} className="inline-flex items-center gap-1.5 text-sm mb-8 text-gray-500 hover:text-gray-900 transition-colors">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
             {t.backToHome}
           </a>
@@ -331,10 +329,10 @@ export default function ResourcesPage({ locale }: ResourcesPageProps) {
           <div className="flex items-start gap-8">
             {/* Left */}
             <div className="flex-1 min-w-0">
-              <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4" style={{ color: '#fff' }}>
+              <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 text-gray-900">
                 {t.heroTitle}
               </h1>
-              <p className="text-base md:text-lg max-w-xl leading-relaxed whitespace-pre-line" style={{ color: 'rgba(255,255,255,0.65)' }}>
+              <p className="text-base md:text-lg max-w-xl leading-relaxed whitespace-pre-line text-gray-600">
                 {t.heroSubtitle}
               </p>
 
@@ -345,16 +343,16 @@ export default function ResourcesPage({ locale }: ResourcesPageProps) {
                   { n: stats.enResources, l: t.statsEnglish },
                   { n: stats.totalCategories, l: t.statsCategories },
                 ].map((s) => (
-                  <div key={s.l} className="px-4 py-2 rounded-full backdrop-blur-sm" style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.1)' }}>
-                    <span className="text-sm font-bold" style={{ color: '#fff' }}>{s.n}</span>
-                    <span className="text-xs ml-1.5" style={{ color: 'rgba(255,255,255,0.5)' }}>{s.l}</span>
+                  <div key={s.l} className="px-4 py-2 rounded-full bg-white/80 border border-gray-200">
+                    <span className="text-sm font-bold text-gray-900">{s.n}</span>
+                    <span className="text-xs ml-1.5 text-gray-500">{s.l}</span>
                   </div>
                 ))}
               </div>
 
               <div className="mt-8 max-w-md">
                 <div className="relative">
-                  <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5" style={{ color: 'rgba(255,255,255,0.3)' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                   <input
@@ -362,8 +360,7 @@ export default function ResourcesPage({ locale }: ResourcesPageProps) {
                     placeholder={t.searchPlaceholder}
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                    className="w-full pl-12 pr-4 py-3 rounded-xl text-sm text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-blue-400/40 transition-all"
-                    style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.12)' }}
+                    className="w-full pl-12 pr-4 py-3 rounded-xl text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400/40 transition-all bg-white/80 border border-gray-200"
                   />
                 </div>
               </div>
@@ -371,32 +368,32 @@ export default function ResourcesPage({ locale }: ResourcesPageProps) {
 
             {/* Right: floating cards */}
             <div className="hidden lg:block relative w-80 h-72 shrink-0">
-              <div className="absolute top-2 right-0 w-56 rounded-xl p-4 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500" style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', backdropFilter: 'blur(12px)' }}>
+              <div className="absolute top-2 right-0 w-56 rounded-xl p-4 shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-500 bg-white/90 border border-gray-200">
                 <div className="flex items-center gap-2.5 mb-2">
                   <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{ background: 'rgba(255, 106, 0, 0.2)' }}>☁️</div>
-                  <span className="text-sm font-semibold" style={{ color: '#fff' }}>{locale === 'zh' ? '阿里云' : 'Alibaba Cloud'}</span>
+                  <span className="text-sm font-semibold text-gray-900">{locale === 'zh' ? '阿里云' : 'Alibaba Cloud'}</span>
                 </div>
-                <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.5)' }}>
+                <p className="text-xs leading-relaxed text-gray-600">
                   {locale === 'zh' ? '一键部署 OpenClaw，构建钉钉 AI 助理' : 'One-click deploy OpenClaw, build DingTalk AI assistant'}
                 </p>
               </div>
 
-              <div className="absolute top-20 left-0 w-52 rounded-xl p-4 shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500" style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', backdropFilter: 'blur(12px)' }}>
+              <div className="absolute top-20 left-0 w-52 rounded-xl p-4 shadow-xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 bg-white/90 border border-gray-200">
                 <div className="flex items-center gap-2.5 mb-2">
                   <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{ background: 'rgba(0, 130, 255, 0.2)' }}>🔷</div>
-                  <span className="text-sm font-semibold" style={{ color: '#fff' }}>{locale === 'zh' ? '腾讯云' : 'Tencent Cloud'}</span>
+                  <span className="text-sm font-semibold text-gray-900">{locale === 'zh' ? '腾讯云' : 'Tencent Cloud'}</span>
                 </div>
-                <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.5)' }}>
+                <p className="text-xs leading-relaxed text-gray-600">
                   {locale === 'zh' ? 'Lighthouse 部署 + 飞书接入教程' : 'Lighthouse deploy + Feishu integration'}
                 </p>
               </div>
 
-              <div className="absolute bottom-4 right-4 w-48 rounded-xl p-4 shadow-2xl transform rotate-1 hover:rotate-0 transition-transform duration-500" style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', backdropFilter: 'blur(12px)' }}>
+              <div className="absolute bottom-4 right-4 w-48 rounded-xl p-4 shadow-xl transform rotate-1 hover:rotate-0 transition-transform duration-500 bg-white/90 border border-gray-200">
                 <div className="flex items-center gap-2.5 mb-2">
                   <div className="w-7 h-7 rounded-lg flex items-center justify-center text-sm" style={{ background: 'rgba(0, 105, 255, 0.2)' }}>🌊</div>
-                  <span className="text-sm font-semibold" style={{ color: '#fff' }}>DigitalOcean</span>
+                  <span className="text-sm font-semibold text-gray-900">DigitalOcean</span>
                 </div>
-                <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.5)' }}>One-Click Deploy Guide</p>
+                <p className="text-xs leading-relaxed text-gray-600">One-Click Deploy Guide</p>
               </div>
 
               <div className="absolute top-0 left-8 px-2.5 py-1 rounded-full text-[10px] font-medium animate-bounce" style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#6ee7b7', border: '1px solid rgba(16, 185, 129, 0.3)', animationDuration: '3s' }}>B站</div>
@@ -458,41 +455,14 @@ export default function ResourcesPage({ locale }: ResourcesPageProps) {
           ))
         )}
 
-        {/* ── contribute CTA ── */}
-        <div className="reveal mt-12 relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-6">
-          {/* decorative */}
-          <div className="absolute top-0 right-0 w-40 h-40 rounded-full blur-3xl" style={{ background: 'rgba(37, 99, 235, 0.15)' }} />
-          <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full blur-3xl" style={{ background: 'rgba(16, 185, 129, 0.1)' }} />
-
-          <div className="flex-1 relative">
-            <h3 className="text-xl font-bold mb-2" style={{ color: '#fff' }}>{t.contributeTitle}</h3>
-            <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>
-              {t.contributeDesc} <code className="px-1.5 py-0.5 rounded text-xs" style={{ background: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.8)' }}>src/data/resources.ts</code>{t.contributeDesc2}
-            </p>
-          </div>
-          <a
-            href="https://github.com/mengjian-github/openclaw101"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 font-semibold rounded-xl hover:shadow-lg transition-all hover:-translate-y-0.5"
-          >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-            </svg>
-            {t.submitPR}
-          </a>
-        </div>
       </div>
 
       {/* ── footer ── */}
       <footer className="hero-glow py-8 mt-4">
-        <div className="max-w-5xl mx-auto px-4 text-center text-sm" style={{ color: 'rgba(255,255,255,0.4)' }}>
-          {t.footerMadeBy} <span style={{ color: 'rgba(255,255,255,0.7)' }}>小墨</span> · <a href={homeUrl} className="hover:underline" style={{ color: 'rgba(255,255,255,0.6)' }}>OpenClaw 101</a> · <a href="https://github.com/mengjian-github/openclaw101" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: 'rgba(255,255,255,0.6)' }}>GitHub</a>
+        <div className="max-w-5xl mx-auto px-4 text-center text-sm text-gray-600">
+          {t.footerMadeBy} <span className="text-gray-800">小墨</span> · <a href={homeUrl} className="hover:underline text-gray-700">MyClaw</a>
         </div>
       </footer>
-
-      {/* Floating consult button */}
-      <ConsultButton locale={locale} />
     </div>
   );
 }

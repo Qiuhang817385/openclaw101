@@ -72,12 +72,12 @@ html {
   display: none;
 }
 
-/* Hero background - use background shorthand to layer patterns over solid color */
+/* Hero / footer background - light theme */
 .hero-glow {
-  background-color: #0F172A;
+  background-color: #f8fafc;
   background-image:
-    radial-gradient(circle at 25% 25%, rgba(37, 99, 235, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
-    radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    radial-gradient(circle at 25% 25%, rgba(37, 99, 235, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
+    radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
   background-size: 100%, 100%, 40px 40px;
 }

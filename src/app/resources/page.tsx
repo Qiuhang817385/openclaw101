@@ -5,24 +5,24 @@ export const metadata: Metadata = {
   title: 'Resource Hub',
   description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
   alternates: {
-    canonical: 'https://openclaw101.dev/resources',
+    canonical: 'https://openclaw.meetai.fun/resources',
     languages: {
-      'en': 'https://openclaw101.dev/resources',
-      'zh': 'https://openclaw101.dev/zh/resources',
+      'en': 'https://openclaw.meetai.fun/resources',
+      'zh': 'https://openclaw.meetai.fun/zh/resources',
     },
   },
   openGraph: {
     title: 'Resource Hub',
     description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
     type: 'website',
-    url: 'https://openclaw101.dev/resources',
-    siteName: 'OpenClaw 101',
+    url: 'https://openclaw.meetai.fun/resources',
+    siteName: 'MyClaw',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Resource Hub - OpenClaw 101',
+        alt: 'Resource Hub - MyClaw',
       },
     ],
   },
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Resource Hub - OpenClaw 101',
-  url: 'https://openclaw101.dev/resources',
+  name: 'Resource Hub - MyClaw',
+  url: 'https://openclaw.meetai.fun/resources',
   description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
   inLanguage: 'en',
   isPartOf: {
     '@type': 'WebSite',
-    name: 'OpenClaw 101',
-    url: 'https://openclaw101.dev',
+    name: 'MyClaw',
+    url: 'https://openclaw.meetai.fun',
   },
 };
 

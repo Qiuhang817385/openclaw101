@@ -1,25 +1,25 @@
-# OpenClaw 101
+# MyClaw
 
 > Free 7-day tutorial to master OpenClaw — build your own AI personal assistant.
 
 ## About
 
-OpenClaw 101 is the definitive learning resource for OpenClaw (formerly Clawdbot/Moltbot), an open-source AI agent framework. The site provides a structured 7-day tutorial that takes you from zero to running your own AI personal assistant, plus a curated resource library with 70+ tools, skills, and integrations.
+MyClaw is the definitive learning resource for OpenClaw (formerly Clawdbot/Moltbot), an open-source AI agent framework. The site provides a structured 7-day tutorial that takes you from zero to running your own AI personal assistant, plus a curated resource library with 70+ tools, skills, and integrations.
 
 OpenClaw lets you build a self-hosted AI assistant that can manage email, browse the web, execute code, automate workflows, and connect to services like Telegram, Gmail, Google Calendar, and more.
 
 ## Key Pages
 
-- [Home](https://openclaw101.dev/): Overview and course introduction
-- [Day 1: Meet OpenClaw](https://openclaw101.dev/day/1): What is OpenClaw, architecture overview, and what it can do
-- [Day 2: Installation](https://openclaw101.dev/day/2): Step-by-step setup guide for server and local environments
-- [Day 3: Give Your Assistant a Soul](https://openclaw101.dev/day/3): Personality configuration with SOUL.md and USER.md
-- [Day 4: Connect Your Digital Life](https://openclaw101.dev/day/4): Integrating Gmail, Calendar, browser, and other services
-- [Day 5: Skills Ecosystem](https://openclaw101.dev/day/5): Installing and creating skills (plugins) for your assistant
-- [Day 6: Automation & Heartbeat](https://openclaw101.dev/day/6): Setting up proactive monitoring, cron jobs, and heartbeat checks
-- [Day 7: Advanced Techniques](https://openclaw101.dev/day/7): Multi-agent workflows, browser automation, and advanced tips
-- [Resources](https://openclaw101.dev/resources): 70+ curated tools, skills, and community resources
-- [中文首页](https://openclaw101.dev/zh): Chinese version of the full tutorial
+- [Home](https://openclaw.meetai.fun/): Overview and course introduction
+- [Day 1: Meet OpenClaw](https://openclaw.meetai.fun/day/1): What is OpenClaw, architecture overview, and what it can do
+- [Day 2: Installation](https://openclaw.meetai.fun/day/2): Step-by-step setup guide for server and local environments
+- [Day 3: Give Your Assistant a Soul](https://openclaw.meetai.fun/day/3): Personality configuration with SOUL.md and USER.md
+- [Day 4: Connect Your Digital Life](https://openclaw.meetai.fun/day/4): Integrating Gmail, Calendar, browser, and other services
+- [Day 5: Skills Ecosystem](https://openclaw.meetai.fun/day/5): Installing and creating skills (plugins) for your assistant
+- [Day 6: Automation & Heartbeat](https://openclaw.meetai.fun/day/6): Setting up proactive monitoring, cron jobs, and heartbeat checks
+- [Day 7: Advanced Techniques](https://openclaw.meetai.fun/day/7): Multi-agent workflows, browser automation, and advanced tips
+- [Resources](https://openclaw.meetai.fun/resources): 70+ curated tools, skills, and community resources
+- [中文首页](https://openclaw.meetai.fun/zh): Chinese version of the full tutorial
 
 ## FAQ
 

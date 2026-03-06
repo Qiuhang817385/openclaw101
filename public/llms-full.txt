@@ -1,10 +1,10 @@
-# OpenClaw 101 — Complete Guide
+# MyClaw — Complete Guide
 
 > Free 7-day tutorial to master OpenClaw — build your own AI personal assistant from scratch.
 
 ## About
 
-OpenClaw 101 (https://openclaw101.dev) is the definitive learning resource for OpenClaw, an open-source AI agent framework formerly known as Clawdbot and Moltbot. The site provides a comprehensive, structured 7-day tutorial that takes you from complete beginner to running your own fully-functional AI personal assistant.
+MyClaw (https://openclaw.meetai.fun) is the definitive learning resource for OpenClaw, an open-source AI agent framework formerly known as Clawdbot and Moltbot. The site provides a comprehensive, structured 7-day tutorial that takes you from complete beginner to running your own fully-functional AI personal assistant.
 
 OpenClaw enables you to build a self-hosted AI assistant that runs 24/7 on your own server. Unlike cloud-only AI chatbots, an OpenClaw assistant has real capabilities: it can read and send emails via Gmail, manage your Google Calendar, browse the web with a real browser, execute code, automate repetitive tasks, and connect to dozens of services through its extensible skills system.
 
@@ -15,35 +15,35 @@ Available in both English and Chinese (中文).
 ## Tutorial Structure
 
 ### Day 1: Meet OpenClaw
-URL: https://openclaw101.dev/day/1
+URL: https://openclaw.meetai.fun/day/1
 Learn what OpenClaw is, understand the architecture (Gateway, Channels, Skills), see real-world use cases, and understand the difference between a chatbot and a true AI agent. Covers the concept of giving your AI assistant autonomy through file-based memory (SOUL.md, USER.md, MEMORY.md).
 
 ### Day 2: Installation & Setup
-URL: https://openclaw101.dev/day/2
+URL: https://openclaw.meetai.fun/day/2
 Step-by-step installation guide. Requirements: Linux server (recommended: Hetzner, DigitalOcean), Node.js 20+, and an AI API key. Covers server setup, OpenClaw installation, Telegram bot creation, first-run configuration, and troubleshooting common issues.
 
 ### Day 3: Give Your Assistant a Soul
-URL: https://openclaw101.dev/day/3
+URL: https://openclaw.meetai.fun/day/3
 Configure your assistant's personality and knowledge through SOUL.md (identity and behavior), USER.md (information about you), and AGENTS.md (workspace rules). Learn prompt engineering techniques for AI agents and how to create a unique personality.
 
 ### Day 4: Connect Your Digital Life
-URL: https://openclaw101.dev/day/4
+URL: https://openclaw.meetai.fun/day/4
 Integrate real services: Gmail (read/send emails), Google Calendar (view/create events), web browsing (real Chrome via Browser Relay), file management, and more. OAuth setup guides and security best practices included.
 
 ### Day 5: Skills Ecosystem
-URL: https://openclaw101.dev/day/5
+URL: https://openclaw.meetai.fun/day/5
 Skills are plugins that extend your assistant's capabilities. Learn to install community skills (SEO analysis, social media, PDF parsing, TTS), create custom skills with SKILL.md files, and contribute to the skills marketplace.
 
 ### Day 6: Automation & Heartbeat
-URL: https://openclaw101.dev/day/6
+URL: https://openclaw.meetai.fun/day/6
 Make your assistant proactive. Set up heartbeat checks (periodic polling), cron jobs (scheduled tasks), email monitoring, calendar reminders, and automated workflows. Learn the HEARTBEAT.md configuration and best practices for proactive AI agents.
 
 ### Day 7: Advanced Techniques
-URL: https://openclaw101.dev/day/7
+URL: https://openclaw.meetai.fun/day/7
 Multi-agent workflows (sub-agents for parallel tasks), browser automation for complex web tasks, node system for controlling remote devices, advanced memory management, cost optimization strategies, and production deployment tips.
 
 ### Resources Library
-URL: https://openclaw101.dev/resources
+URL: https://openclaw.meetai.fun/resources
 70+ curated resources organized by category:
 - Official repositories and documentation
 - Community skills and plugins
@@ -55,15 +55,15 @@ URL: https://openclaw101.dev/resources
 ## Chinese Version (中文版)
 
 All pages are available in Chinese:
-- 首页: https://openclaw101.dev/zh
-- 第1天: https://openclaw101.dev/zh/day/1
-- 第2天: https://openclaw101.dev/zh/day/2
-- 第3天: https://openclaw101.dev/zh/day/3
-- 第4天: https://openclaw101.dev/zh/day/4
-- 第5天: https://openclaw101.dev/zh/day/5
-- 第6天: https://openclaw101.dev/zh/day/6
-- 第7天: https://openclaw101.dev/zh/day/7
-- 资源库: https://openclaw101.dev/zh/resources
+- 首页: https://openclaw.meetai.fun/zh
+- 第1天: https://openclaw.meetai.fun/zh/day/1
+- 第2天: https://openclaw.meetai.fun/zh/day/2
+- 第3天: https://openclaw.meetai.fun/zh/day/3
+- 第4天: https://openclaw.meetai.fun/zh/day/4
+- 第5天: https://openclaw.meetai.fun/zh/day/5
+- 第6天: https://openclaw.meetai.fun/zh/day/6
+- 第7天: https://openclaw.meetai.fun/zh/day/7
+- 资源库: https://openclaw.meetai.fun/zh/resources
 
 ## FAQ
 

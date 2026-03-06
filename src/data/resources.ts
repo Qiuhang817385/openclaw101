@@ -704,7 +704,7 @@ export const resources: Resource[] = [
     title: 'OpenClaw 7天入门指南 — 飞书知识库',
     desc: '从认识到进阶，每天一个主题的系统化学习路径',
     url: 'https://my.feishu.cn/wiki/YkWgwqSchi9xW3kEuZscAm0lnFf',
-    source: 'OpenClaw 101',
+    source: 'MyClaw',
     lang: 'zh',
     category: 'getting-started',
     featured: true,
@@ -1210,7 +1210,7 @@ export const resources: Resource[] = [
 
   // -- Getting Started --
   {
-    title: 'Robo Rhythms — OpenClaw 101 Beginner Friendly Guide',
+    title: 'Robo Rhythms — MyClaw Beginner Friendly Guide',
     desc: 'From first install to advanced workflows, covers common pitfalls like context loss and memory issues',
     url: 'https://www.roborhythms.com/openclaw-beginner-friendly-guide/',
     source: 'Robo Rhythms',
