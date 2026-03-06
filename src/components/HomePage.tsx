@@ -8,6 +8,8 @@ import LearningPath from './LearningPath';
 import Skills from './Skills';
 import ResourcesSection from './ResourcesSection';
 import Footer from './Footer';
+// 隐藏 Consult：import ConsultButton from './ConsultButton';
+// 隐藏 Community：import Community from './Community';
 
 interface HomePageProps {
   locale: Locale;
@@ -24,7 +26,9 @@ export default function HomePage({ locale }: HomePageProps) {
       <LearningPath locale={locale} dict={dict} />
       <Skills locale={locale} dict={dict} />
       <ResourcesSection locale={locale} dict={dict} />
+      {/* 隐藏 Community：<Community locale={locale} dict={dict} /> */}
       <Footer locale={locale} dict={dict} />
+      {/* 隐藏 Consult：<ConsultButton locale={locale} /> */}
     </main>
   );
 }

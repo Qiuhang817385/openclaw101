@@ -19,7 +19,7 @@ function getDay(day: string): { content: string; frontmatter: any } | null {
   const dayNum = parseInt(day);
   if (!DAYS.includes(dayNum)) return null;
 
-  const filePath = path.join(process.cwd(), 'content', 'days', `day${dayNum}.md`);
+  const filePath = path.join(process.cwd(), 'content', 'days-en', `day${dayNum}.md`);
   if (!fs.existsSync(filePath)) return null;
 
   const fileContent = fs.readFileSync(filePath, 'utf8');
@@ -33,23 +33,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!data) return { title: 'Not Found' };
 
   const dayNum = parseInt(day);
-  const titles: Record<number, string> = {
-    1: '初识 OpenClaw',
-    2: '深入对话',
-    3: '文件与代码',
-    4: '网络能力',
-    5: '技能扩展',
-    6: '自动化',
-    7: '高级技巧',
+  const titles: Record<number, { en: string; zh: string }> = {
+    1: { en: 'Meet OpenClaw', zh: '初识 OpenClaw' },
+    2: { en: 'Build Your Assistant in 10 Minutes', zh: '10 分钟，搭建你的助手' },
+    3: { en: 'Give Your Assistant a Soul', zh: '给助手一个灵魂' },
+    4: { en: 'Connect Your Digital Life', zh: '接入你的数字生活' },
+    5: { en: 'Unlock the Skill Tree', zh: '解锁技能树' },
+    6: { en: 'Make Your Assistant Work Proactively', zh: '让助手主动工作' },
+    7: { en: 'Advanced Techniques & Future Outlook', zh: '进阶玩法 & 未来展望' },
   };
 
-  const title = `第 ${dayNum} 天：${titles[dayNum]} | MyClaw`;
+  const title = `Day ${dayNum}: ${titles[dayNum]?.en || ''} | MyClaw`;
 
   return {
     title,
     description: data.frontmatter.description,
     alternates: {
-      canonical: `https://openclaw.meetai.fun/day/${day}`,
+      canonical: `https://openclaw.meetai.fun/en/day/${day}`,
       languages: {
         'en': `https://openclaw.meetai.fun/en/day/${day}`,
         'zh': `https://openclaw.meetai.fun/day/${day}`,
@@ -59,13 +59,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description: data.frontmatter.description,
       type: 'article',
-      url: `https://openclaw.meetai.fun/day/${day}`,
-      locale: 'zh_CN',
+      url: `https://openclaw.meetai.fun/en/day/${day}`,
     },
   };
 }
 
-export default async function DayPage({ params }: Props) {
+export default async function EnDayPage({ params }: Props) {
   const { day } = await params;
   const data = getDay(day);
 
@@ -85,7 +84,7 @@ export default async function DayPage({ params }: Props) {
         frontmatter={data.frontmatter}
         prevDay={prevDay}
         nextDay={nextDay}
-        locale="zh"
+        locale="en"
       />
     </main>
   );

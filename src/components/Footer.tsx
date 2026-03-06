@@ -1,4 +1,4 @@
-import { Dictionary } from '@/lib/i18n';
+import { Dictionary, defaultLocale } from '@/lib/i18n';
 
 interface FooterProps {
   locale: 'en' | 'zh';
@@ -7,7 +7,7 @@ interface FooterProps {
 
 export default function Footer({ locale, dict }: FooterProps) {
   const isZh = locale === 'zh';
-  const prefix = locale === 'en' ? '' : `/${locale}`;
+  const prefix = locale === defaultLocale ? '' : `/${locale}`;
 
   return (
     <footer className="hero-glow py-6 sm:py-12">
@@ -21,6 +21,7 @@ export default function Footer({ locale, dict }: FooterProps) {
             <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-gray-600">
               <li><a href="https://openclaw.ai" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">{isZh ? 'OpenClaw 官网' : 'OpenClaw Website'}</a></li>
               <li><a href="https://docs.openclaw.ai" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">{isZh ? '官方文档' : 'Documentation'}</a></li>
+              {/* 隐藏 GitHub：<li><a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">GitHub (145k+ ⭐)</a></li> */}
               <li><a href="https://clawhub.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">{isZh ? 'ClawHub 技能市场' : 'ClawHub Skills'}</a></li>
             </ul>
           </div>
@@ -43,6 +44,7 @@ export default function Footer({ locale, dict }: FooterProps) {
               <li><a href="https://discord.com/invite/clawd" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">Discord</a></li>
               <li><a href="https://www.reddit.com/r/ThinkingDeeplyAI/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">Reddit</a></li>
               <li><a href="https://xiaomo.dev" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">🐈‍⬛ {isZh ? '认识小墨' : 'Meet Xiaomo'}</a></li>
+              {/* 隐藏 GitHub：<li><a href="https://github.com/mengjian-github/openclaw101" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">{isZh ? '贡献资源 (PR)' : 'Contribute (PR)'}</a></li> */}
               <li><a href="https://www.skill-cn.com?from=openclaw101" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">{isZh ? 'Skill Hub 中国' : 'Skill Hub CN'}</a></li>
             </ul>
           </div>
@@ -70,6 +72,7 @@ export default function Footer({ locale, dict }: FooterProps) {
               <span className="hidden sm:inline">·</span>
               <span className="sm:hidden">|</span>
               <span>{isZh ? '开源共享' : 'Open Source'}</span>
+              {/* 隐藏 GitHub：<span className="hidden sm:inline">·</span><span className="sm:hidden">|</span><a href="https://github.com/mengjian-github/openclaw101" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">GitHub</a> */}
               <span className="hidden sm:inline">·</span>
               <span className="sm:hidden">|</span>
               <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">浙ICP备2026011343号-1</a>

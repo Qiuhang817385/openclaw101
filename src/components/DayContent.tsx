@@ -62,7 +62,7 @@ export default function DayContent({ day, content, frontmatter, prevDay, nextDay
       {/* Header */}
       <header className="border-b border-gray-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href={locale === 'zh' ? '/zh' : '/'} className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors">
+          <Link href={locale === 'zh' ? '/' : '/en'} className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors">
             <span>←</span>
             <span>{t.backToHome}</span>
           </Link>
@@ -237,7 +237,7 @@ export default function DayContent({ day, content, frontmatter, prevDay, nextDay
           <div className="flex flex-col sm:flex-row gap-3 sm:justify-between">
             {prevDay ? (
               <Link 
-                href={`${locale === 'zh' ? '/zh' : ''}/day/${prevDay}`}
+                href={locale === 'zh' ? `/day/${prevDay}` : `/en/day/${prevDay}`}
                 className="flex items-center justify-center gap-2 px-5 py-3 bg-gray-200 hover:bg-gray-300 rounded-lg transition-colors text-gray-800 text-sm sm:text-base"
               >
                 <span>←</span>
@@ -249,7 +249,7 @@ export default function DayContent({ day, content, frontmatter, prevDay, nextDay
             
             {nextDay ? (
               <Link 
-                href={`${locale === 'zh' ? '/zh' : ''}/day/${nextDay}`}
+                href={locale === 'zh' ? `/day/${nextDay}` : `/en/day/${nextDay}`}
                 className="flex items-center justify-center gap-2 px-5 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg transition-colors text-sm sm:text-base font-medium"
               >
                 <span className="whitespace-nowrap">{t.next}</span>
@@ -257,7 +257,7 @@ export default function DayContent({ day, content, frontmatter, prevDay, nextDay
               </Link>
             ) : (
               <Link 
-                href={locale === 'zh' ? '/zh' : '/'}
+                href={locale === 'zh' ? '/' : '/en'}
                 className="flex items-center justify-center gap-2 px-5 py-3 bg-green-600 hover:bg-green-500 rounded-lg transition-colors text-sm sm:text-base font-medium"
               >
                 <span>🎉 {locale === 'zh' ? '完成！返回首页' : 'Done! Back Home'}</span>

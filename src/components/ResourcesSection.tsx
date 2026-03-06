@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import { getFeaturedResources, categoryMeta, stats, type Resource } from '@/data/resources';
-import { Dictionary } from '@/lib/i18n';
+import { Dictionary, defaultLocale } from '@/lib/i18n';
 
 interface ResourcesSectionProps {
   locale: 'en' | 'zh';
@@ -61,7 +61,7 @@ export default function ResourcesSection({ locale, dict }: ResourcesSectionProps
   const sectionRef = useRef<HTMLElement>(null);
   const featured = getFeaturedResources();
   const isZh = locale === 'zh';
-  const prefix = locale === 'en' ? '' : `/${locale}`;
+  const prefix = locale === defaultLocale ? '' : `/${locale}`;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -166,6 +166,7 @@ export default function ResourcesSection({ locale, dict }: ResourcesSectionProps
           </a>
           <p className="text-gray-500 text-sm mt-3">
             {isZh ? '持续更新中' : 'Continuously updated'}
+            {/* 隐藏 GitHub：· <a href="https://github.com/mengjian-github/openclaw101" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{isZh ? '欢迎提交 PR 补充资源' : 'PRs welcome'}</a> */}
           </p>
         </div>
       </div>

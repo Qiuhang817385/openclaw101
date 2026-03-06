@@ -58,8 +58,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://openclaw.meetai.fun',
     languages: {
-      'en': 'https://openclaw.meetai.fun',
-      'zh': 'https://openclaw.meetai.fun/zh',
+      'zh': 'https://openclaw.meetai.fun',
+      'en': 'https://openclaw.meetai.fun/en',
     },
   },
 };
@@ -191,8 +191,8 @@ export default function RootLayout({
         />
         
         {/* hreflang tags for i18n */}
-        <link rel="alternate" hrefLang="en" href="https://openclaw.meetai.fun" />
-        <link rel="alternate" hrefLang="zh" href="https://openclaw.meetai.fun/zh" />
+        <link rel="alternate" hrefLang="zh" href="https://openclaw.meetai.fun" />
+        <link rel="alternate" hrefLang="en" href="https://openclaw.meetai.fun/en" />
         <link rel="alternate" hrefLang="x-default" href="https://openclaw.meetai.fun" />
         
         {/* Google tag (gtag.js) */}

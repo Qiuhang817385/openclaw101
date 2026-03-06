@@ -9,107 +9,23 @@ interface LearningPathProps {
 }
 
 const daysZh = [
-  {
-    day: 1,
-    icon: '👋',
-    title: '初识 OpenClaw',
-    desc: '了解 AI 私人助理的真正含义，以及 OpenClaw 能为你做什么。',
-    localLink: '/zh/day/1',
-  },
-  {
-    day: 2,
-    icon: '💬',
-    title: '深入对话',
-    desc: '掌握与 AI 助理对话的技巧，让沟通更高效、更自然。',
-    localLink: '/zh/day/2',
-  },
-  {
-    day: 3,
-    icon: '📁',
-    title: '文件与代码',
-    desc: '让 AI 助理帮你处理文件、写代码、执行脚本。',
-    localLink: '/zh/day/3',
-  },
-  {
-    day: 4,
-    icon: '🌐',
-    title: '网络能力',
-    desc: '搜索、抓取、API 调用，让 AI 助理连接互联网。',
-    localLink: '/zh/day/4',
-  },
-  {
-    day: 5,
-    icon: '🧩',
-    title: '技能扩展',
-    desc: '安装社区技能，让 AI 助理学会更多能力。',
-    localLink: '/zh/day/5',
-  },
-  {
-    day: 6,
-    icon: '⏰',
-    title: '自动化',
-    desc: '定时任务、心跳检测、主动推送，让 AI 助理自主工作。',
-    localLink: '/zh/day/6',
-  },
-  {
-    day: 7,
-    icon: '🚀',
-    title: '高级技巧',
-    desc: '多 Agent、浏览器控制、设备联动，解锁全部潜力。',
-    localLink: '/zh/day/7',
-  },
+  { day: 1, icon: '👋', title: '初识 OpenClaw', desc: '了解 AI 私人助理的真正含义，以及 OpenClaw 能为你做什么。', localLink: '/day/1' },
+  { day: 2, icon: '💬', title: '深入对话', desc: '掌握与 AI 助理对话的技巧，让沟通更高效、更自然。', localLink: '/day/2' },
+  { day: 3, icon: '📁', title: '文件与代码', desc: '让 AI 助理帮你处理文件、写代码、执行脚本。', localLink: '/day/3' },
+  { day: 4, icon: '🌐', title: '网络能力', desc: '搜索、抓取、API 调用，让 AI 助理连接互联网。', localLink: '/day/4' },
+  { day: 5, icon: '🧩', title: '技能扩展', desc: '安装社区技能，让 AI 助理学会更多能力。', localLink: '/day/5' },
+  { day: 6, icon: '⏰', title: '自动化', desc: '定时任务、心跳检测、主动推送，让 AI 助理自主工作。', localLink: '/day/6' },
+  { day: 7, icon: '🚀', title: '高级技巧', desc: '多 Agent、浏览器控制、设备联动，解锁全部潜力。', localLink: '/day/7' },
 ];
 
 const daysEn = [
-  {
-    day: 1,
-    icon: '👋',
-    title: 'Meet OpenClaw',
-    desc: 'Understand what a true AI assistant means and what OpenClaw can do for you.',
-    localLink: '/day/1',
-  },
-  {
-    day: 2,
-    icon: '💬',
-    title: 'Deep Conversations',
-    desc: 'Master the art of communicating with your AI assistant effectively.',
-    localLink: '/day/2',
-  },
-  {
-    day: 3,
-    icon: '📁',
-    title: 'Files & Code',
-    desc: 'Let your AI assistant handle files, write code, and run scripts.',
-    localLink: '/day/3',
-  },
-  {
-    day: 4,
-    icon: '🌐',
-    title: 'Web Capabilities',
-    desc: 'Search, scrape, API calls. Connect your AI assistant to the internet.',
-    localLink: '/day/4',
-  },
-  {
-    day: 5,
-    icon: '🧩',
-    title: 'Skill Extensions',
-    desc: 'Install community skills to teach your assistant new abilities.',
-    localLink: '/day/5',
-  },
-  {
-    day: 6,
-    icon: '⏰',
-    title: 'Automation',
-    desc: 'Cron jobs, heartbeat checks, proactive alerts. Let your AI work autonomously.',
-    localLink: '/day/6',
-  },
-  {
-    day: 7,
-    icon: '🚀',
-    title: 'Advanced Techniques',
-    desc: 'Multi-agent, browser control, device integration. Unlock full potential.',
-    localLink: '/day/7',
-  },
+  { day: 1, icon: '👋', title: 'Meet OpenClaw', desc: 'Understand what a true AI assistant means and what OpenClaw can do for you.', localLink: '/en/day/1' },
+  { day: 2, icon: '💬', title: 'Deep Conversations', desc: 'Master the art of communicating with your AI assistant effectively.', localLink: '/en/day/2' },
+  { day: 3, icon: '📁', title: 'Files & Code', desc: 'Let your AI assistant handle files, write code, and run scripts.', localLink: '/en/day/3' },
+  { day: 4, icon: '🌐', title: 'Web Capabilities', desc: 'Search, scrape, API calls. Connect your AI assistant to the internet.', localLink: '/en/day/4' },
+  { day: 5, icon: '🧩', title: 'Skill Extensions', desc: 'Install community skills to teach your assistant new abilities.', localLink: '/en/day/5' },
+  { day: 6, icon: '⏰', title: 'Automation', desc: 'Cron jobs, heartbeat checks, proactive alerts. Let your AI work autonomously.', localLink: '/en/day/6' },
+  { day: 7, icon: '🚀', title: 'Advanced Techniques', desc: 'Multi-agent, browser control, device integration. Unlock full potential.', localLink: '/en/day/7' },
 ];
 
 export default function LearningPath({ locale, dict }: LearningPathProps) {

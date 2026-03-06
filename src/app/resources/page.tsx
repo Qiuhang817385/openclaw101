@@ -2,18 +2,18 @@ import { Metadata } from 'next';
 import ResourcesPage from '@/components/ResourcesPage';
 
 export const metadata: Metadata = {
-  title: 'Resource Hub',
-  description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
+  title: '全网资源聚合',
+  description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
   alternates: {
     canonical: 'https://openclaw.meetai.fun/resources',
     languages: {
-      'en': 'https://openclaw.meetai.fun/resources',
-      'zh': 'https://openclaw.meetai.fun/zh/resources',
+      'en': 'https://openclaw.meetai.fun/en/resources',
+      'zh': 'https://openclaw.meetai.fun/resources',
     },
   },
   openGraph: {
-    title: 'Resource Hub',
-    description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
+    title: '全网资源聚合',
+    description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
     type: 'website',
     url: 'https://openclaw.meetai.fun/resources',
     siteName: 'MyClaw',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Resource Hub - MyClaw',
+        alt: '全网资源聚合 - MyClaw',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Resource Hub',
-    description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
+    title: '全网资源聚合',
+    description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
     images: ['/og-image.png'],
   },
 };
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Resource Hub - MyClaw',
+  name: '全网资源聚合 - MyClaw',
   url: 'https://openclaw.meetai.fun/resources',
-  description: 'One-stop access to the best OpenClaw tutorials from Alibaba Cloud, Tencent Cloud, DigitalOcean, Bilibili, Codecademy, IBM and more.',
-  inLanguage: 'en',
+  description: '阿里云、腾讯云、DigitalOcean、B站、Codecademy、IBM……一站式获取 OpenClaw 最佳教程。',
+  inLanguage: 'zh-CN',
   isPartOf: {
     '@type': 'WebSite',
     name: 'MyClaw',
@@ -48,14 +48,14 @@ const jsonLd = {
   },
 };
 
-export default function EnResourcesPage() {
+export default function ResourcesPageZh() {
   return (
     <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <ResourcesPage locale="en" />
+      <ResourcesPage locale="zh" />
     </main>
   );
 }
