@@ -63,6 +63,13 @@ export default function Navbar({ locale, dict }: NavbarProps) {
           >
             {locale === 'zh' ? '全部资源' : 'All Resources'}
           </a>
+
+          <a
+            href="/payment"
+            className="text-sm font-medium px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors duration-200"
+          >
+            {locale === 'zh' ? '支持' : 'Support'}
+          </a>
           
           {/* Language Switcher */}
           <LanguageSwitcher />
@@ -108,6 +115,14 @@ export default function Navbar({ locale, dict }: NavbarProps) {
             className="block py-3 font-medium text-emerald-600 hover:text-emerald-700 transition-colors duration-200"
           >
             {locale === 'zh' ? '全部资源 →' : 'All Resources →'}
+          </a>
+
+          <a
+            href="/payment"
+            onClick={() => setMobileOpen(false)}
+            className="block py-3 font-medium bg-primary text-white rounded-lg text-center mt-2"
+          >
+            {locale === 'zh' ? '支持 🐾' : 'Support 🐾'}
           </a>
           
           {/* Mobile Language Switcher */}

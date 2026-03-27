@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import './globals.css';
+import Providers from '@/components/Providers';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://openclaw.meetai.fun'),
@@ -218,7 +219,9 @@ plausible.init=plausible.init||function(i){plausible.o=i||{}};
 plausible.init();`}
         </Script>
       </head>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
