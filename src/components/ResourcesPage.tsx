@@ -476,7 +476,7 @@ export default function ResourcesPage({ locale }: ResourcesPageProps) {
       {/* ── footer ── */}
       <footer className="hero-glow py-8 mt-4">
         <div className="max-w-5xl mx-auto px-4 text-center text-sm text-gray-600">
-          {t.footerMadeBy} <span className="text-gray-800">小墨</span> · <a href={homeUrl} className="hover:underline text-gray-700">MyClaw</a>
+          {t.footerMadeBy} <span className="text-gray-800">小屿</span> · <a href={homeUrl} className="hover:underline text-gray-700">MyClaw</a>
           {/* 隐藏 GitHub：· <a href="https://github.com/mengjian-github/openclaw101" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a> */}
         </div>
       </footer>

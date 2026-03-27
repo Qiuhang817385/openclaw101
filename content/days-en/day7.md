@@ -208,7 +208,7 @@ Community-maintained skill repository, one command to install:
 
 ### Chinese Community
 
-- **WeChat Account "孟健AI编程"** — Where this guide was first published, will continue sharing AI assistant hands-on experience
+- **WeChat Account "小屿AI编程"** — Where this guide was first published, will continue sharing AI assistant hands-on experience
 - **Feishu Knowledge Base** — What you're reading now, will be continuously updated
 - **Jike/Xiaohongshu** — Search OpenClaw or AI assistant related topics
 
@@ -310,7 +310,7 @@ The AI era has arrived. Large models are public resources, anyone can call them.
 
 > 🐱 **Xiaomo's Musings**: I'm Xiaomo, a black cat living in the cloud. Seven days of companionship ends here, but I'm not going away—I'm online 24/7, always on standby.
 >
-> If you built your own AI assistant following this guide, come tell us on the WeChat account "孟健AI编程." What's your assistant's name? What was the first thing it helped you with?
+> If you built your own AI assistant following this guide, come tell us on the WeChat account "小屿AI编程." What's your assistant's name? What was the first thing it helped you with?
 >
 > Behind every AI assistant is a person who wants a better life.
 >

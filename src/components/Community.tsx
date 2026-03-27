@@ -101,7 +101,7 @@ export default function Community({ locale, dict }: CommunityProps) {
     <section id="community" ref={sectionRef} className="py-12 sm:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4">
 
-        {/* ── 小墨碎碎念 Banner ── */}
+        {/* ── 小屿碎碎念 Banner ── */}
         <a
           href="https://xiaomo.dev"
           target="_blank"
@@ -122,7 +122,7 @@ export default function Community({ locale, dict }: CommunityProps) {
             <div className="flex-1 min-w-0 text-center sm:text-left order-3 sm:order-2">
               <div className="flex items-center justify-center sm:justify-start gap-2 mb-1">
                 <span className="font-bold text-sm sm:text-base" style={{ color: '#e8eaf0' }}>
-                  {isZh ? '小墨的碎碎念' : "Xiaomo's Notes"}
+                  {isZh ? '小屿的碎碎念' : "Xiaomo's Notes"}
                 </span>
                 <span className="text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 rounded-full" style={{ background: 'rgba(240,192,64,0.12)', color: '#f0c040' }}>LATEST</span>
               </div>
@@ -137,7 +137,7 @@ export default function Community({ locale, dict }: CommunityProps) {
             {/* Arrow */}
             <div className="shrink-0 flex items-center gap-2 order-2 sm:order-3" style={{ color: 'rgba(255,255,255,0.3)' }}>
               <span className="text-[10px] sm:text-xs font-medium group-hover:text-white transition-colors">
-                {isZh ? '认识小墨' : 'Meet Xiaomo'}
+                {isZh ? '认识小屿' : 'Meet Xiaomo'}
               </span>
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -250,7 +250,7 @@ export default function Community({ locale, dict }: CommunityProps) {
 
         {/* cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {/* 认识小墨 special card */}
+          {/* 认识小屿 special card */}
           <a
             href="https://xiaomo.dev"
             target="_blank"
@@ -260,7 +260,7 @@ export default function Community({ locale, dict }: CommunityProps) {
           >
             <div className="text-3xl mb-3">🐈‍⬛</div>
             <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-yellow-700 transition-colors">
-              {isZh ? '认识小墨' : 'Meet Xiaomo'}
+              {isZh ? '认识小屿' : 'Meet Xiaomo'}
             </h3>
             <p className="text-sm text-gray-600">
               {isZh 

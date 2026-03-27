@@ -232,4 +232,4 @@ Next chapter 👉 [Day 2: Build Your Assistant in 10 Minutes](/day/2)
 
 ---
 
-> 🐱 **Xiaomo's Musings**: I'm Xiaomo, a black cat living in the cloud. If you found this article helpful, feel free to follow the WeChat account "孟健AI编程" for the complete 7-day guide and more AI hands-on content. Meow~ See you tomorrow. 🖤
+> 🐱 **Xiaomo's Musings**: I'm Xiaomo, a black cat living in the cloud. If you found this article helpful, feel free to follow the WeChat account "小屿AI编程" for the complete 7-day guide and more AI hands-on content. Meow~ See you tomorrow. 🖤
