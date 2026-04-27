@@ -8,7 +8,24 @@ interface LearningPathProps {
   dict: Dictionary;
 }
 
-const daysZh = [
+type DayItem = {
+  day: number;
+  icon: string;
+  title: string;
+  desc: string;
+  localLink: string;
+};
+
+type PracticeItem = {
+  icon: string;
+  title: string;
+  desc: string;
+  localLink: string;
+};
+
+const practiceZh: PracticeItem = { icon: '⚔️', title: '实战', desc: '个人实战经验分享，通过真实案例深入理解 OpenClaw。', localLink: '/practice' };
+
+const daysZh: DayItem[] = [
   { day: 1, icon: '👋', title: '初识 OpenClaw', desc: '了解 AI 私人助理的真正含义，以及 OpenClaw 能为你做什么。', localLink: '/day/1' },
   { day: 2, icon: '💬', title: '深入对话', desc: '掌握与 AI 助理对话的技巧，让沟通更高效、更自然。', localLink: '/day/2' },
   { day: 3, icon: '📁', title: '文件与代码', desc: '让 AI 助理帮你处理文件、写代码、执行脚本。', localLink: '/day/3' },
@@ -18,7 +35,9 @@ const daysZh = [
   { day: 7, icon: '🚀', title: '高级技巧', desc: '多 Agent、浏览器控制、设备联动，解锁全部潜力。', localLink: '/day/7' },
 ];
 
-const daysEn = [
+const practiceEn: PracticeItem = { icon: '⚔️', title: 'Practice', desc: 'Personal practice experience sharing. Learn OpenClaw through real-world examples.', localLink: '/en/practice' };
+
+const daysEn: DayItem[] = [
   { day: 1, icon: '👋', title: 'Meet OpenClaw', desc: 'Understand what a true AI assistant means and what OpenClaw can do for you.', localLink: '/en/day/1' },
   { day: 2, icon: '💬', title: 'Deep Conversations', desc: 'Master the art of communicating with your AI assistant effectively.', localLink: '/en/day/2' },
   { day: 3, icon: '📁', title: 'Files & Code', desc: 'Let your AI assistant handle files, write code, and run scripts.', localLink: '/en/day/3' },
@@ -32,6 +51,8 @@ export default function LearningPath({ locale, dict }: LearningPathProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const isZh = locale === 'zh';
   const days = isZh ? daysZh : daysEn;
+  const practice = isZh ? practiceZh : practiceEn;
+  const allItems: (PracticeItem | DayItem)[] = [practice, ...days];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -60,7 +81,7 @@ export default function LearningPath({ locale, dict }: LearningPathProps) {
             {isZh ? '7天学习路径' : '7-Day Learning Path'}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {isZh 
+            {isZh
               ? '从入门到进阶，每天一个主题，循序渐进掌握 OpenClaw 的全部能力。'
               : 'From beginner to advanced, one topic per day. Progressively master all OpenClaw capabilities.'
             }
@@ -69,22 +90,32 @@ export default function LearningPath({ locale, dict }: LearningPathProps) {
 
         {/* Day cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
-          {days.map((d, i) => (
+          {allItems.map((item, i) => (
             <a
-              key={d.day}
-              href={d.localLink}
-              className="reveal card-hover group block bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-gray-100 relative overflow-hidden"
+              key={'day' in item ? String(item.day) : 'practice'}
+              href={item.localLink}
+              className={`reveal card-hover group block bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-gray-100 relative overflow-hidden ${
+                !('day' in item) ? 'border-orange-200 bg-gradient-to-br from-orange-50 to-white hover:border-orange-300' : ''
+              }`}
               style={{ transitionDelay: `${i * 80}ms` }}
             >
-              {/* Day badge */}
-              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 text-[10px] sm:text-xs font-bold text-primary/40 bg-primary/5 px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-full">
-                DAY {d.day}
-              </div>
+              {/* Badge */}
+              {'day' in item ? (
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 text-[10px] sm:text-xs font-bold text-primary/40 bg-primary/5 px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-full">
+                  DAY {item.day}
+                </div>
+              ) : (
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 text-[10px] sm:text-xs font-bold text-orange-600/40 bg-orange-50 px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-full">
+                  ⚔️ PRACTICE
+                </div>
+              )}
 
-              <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">{d.icon}</div>
-              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-1.5 sm:mb-2">{d.title}</h3>
-              <p className="text-xs sm:text-sm text-gray-500 leading-relaxed mb-3 sm:mb-4">{d.desc}</p>
-              <span className="text-primary text-xs sm:text-sm font-medium group-hover:translate-x-1 inline-block transition-transform duration-300">
+              <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">{item.icon}</div>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-1.5 sm:mb-2">{item.title}</h3>
+              <p className="text-xs sm:text-sm text-gray-500 leading-relaxed mb-3 sm:mb-4">{item.desc}</p>
+              <span className={`text-xs sm:text-sm font-medium group-hover:translate-x-1 inline-block transition-transform duration-300 ${
+                !('day' in item) ? 'text-orange-600' : 'text-primary'
+              }`}>
                 {isZh ? '查看详情 →' : 'Learn more →'}
               </span>
             </a>

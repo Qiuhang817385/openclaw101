@@ -17,6 +17,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
 
   const links = [
     { label: dict.nav.learn, href: '#what-is' },
+    { label: dict.nav.practice, href: '/practice' },
     { label: dict.nav.skills, href: '#skills' },
     { label: dict.nav.resources, href: '#resources' },
     /* 隐藏 Community：{ label: dict.nav.community, href: '#community' }, */

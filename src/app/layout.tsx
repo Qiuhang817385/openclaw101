@@ -1,7 +1,6 @@
-import type { Metadata } from 'next';
-import Script from 'next/script';
-import './globals.css';
-import Providers from '@/components/Providers';
+import type { Metadata } from 'next'
+import './globals.css'
+import Providers from '@/components/Providers'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://openclaw.meetai.fun'),
@@ -9,17 +8,34 @@ export const metadata: Metadata = {
     default: 'MyClaw - Master Your AI Assistant in 7 Days | Free Tutorial',
     template: '%s | MyClaw',
   },
-  description: 'Free 7-day tutorial to master OpenClaw (Clawdbot/Moltbot). Learn to build your own AI personal assistant with installation guides, skills, automation, and 70+ curated resources.',
-  keywords: [
-    'OpenClaw', 'OpenClaw tutorial', 'OpenClaw guide', 'OpenClaw 教程',
-    'Clawdbot', 'Moltbot', 'AI assistant', 'AI Agent', 'personal AI',
-    'Telegram bot', 'self-hosted AI', 'open source AI', 'AI automation',
-    'OpenClaw skills', 'OpenClaw installation', 'OpenClaw setup',
-    '7 day AI tutorial', 'AI助理', 'AI私人助手', '开源AI'
-  ],
+  description:
+    'Free 7-day tutorial to master OpenClaw (Clawdbot/Moltbot). Learn to build your own AI personal assistant with installation guides, skills, automation, and 70+ curated resources.',
   icons: {
     icon: '/favicon.svg',
   },
+  /* SEO 增强字段已关闭 — 完整配置见 docs/埋点方案.md
+  keywords: [
+    'OpenClaw',
+    'OpenClaw tutorial',
+    'OpenClaw guide',
+    'OpenClaw 教程',
+    'Clawdbot',
+    'Moltbot',
+    'AI assistant',
+    'AI Agent',
+    'personal AI',
+    'Telegram bot',
+    'self-hosted AI',
+    'open source AI',
+    'AI automation',
+    'OpenClaw skills',
+    'OpenClaw installation',
+    'OpenClaw setup',
+    '7 day AI tutorial',
+    'AI助理',
+    'AI私人助手',
+    '开源AI',
+  ],
   robots: {
     index: true,
     follow: true,
@@ -33,7 +49,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'MyClaw - Master Your AI Assistant in 7 Days',
-    description: 'Free 7-day tutorial to build your own AI personal assistant with OpenClaw. 70+ curated resources, skills ecosystem, and step-by-step guides.',
+    description:
+      'Free 7-day tutorial to build your own AI personal assistant with OpenClaw. 70+ curated resources, skills ecosystem, and step-by-step guides.',
     url: 'https://openclaw.meetai.fun',
     siteName: 'MyClaw',
     images: [
@@ -50,7 +67,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'MyClaw - Master Your AI Assistant in 7 Days',
-    description: 'Free 7-day tutorial to build your own AI personal assistant with OpenClaw.',
+    description:
+      'Free 7-day tutorial to build your own AI personal assistant with OpenClaw.',
     images: ['https://openclaw.meetai.fun/og-image.png'],
   },
   verification: {
@@ -59,13 +77,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://openclaw.meetai.fun',
     languages: {
-      'zh': 'https://openclaw.meetai.fun',
-      'en': 'https://openclaw.meetai.fun/en',
+      zh: 'https://openclaw.meetai.fun',
+      en: 'https://openclaw.meetai.fun/en',
     },
   },
-};
+  */
+}
 
-// Schema.org structured data
+/* Schema.org 结构化数据已关闭 — 完整 JSON-LD 见 docs/埋点方案.md
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -81,7 +100,8 @@ const jsonLd = {
       '@type': 'Course',
       '@id': 'https://openclaw.meetai.fun/#course',
       name: 'OpenClaw 7-Day Tutorial',
-      description: 'Learn to build and customize your own AI personal assistant with OpenClaw in 7 days',
+      description:
+        'Learn to build and customize your own AI personal assistant with OpenClaw in 7 days',
       provider: {
         '@type': 'Organization',
         name: 'MyClaw',
@@ -93,7 +113,12 @@ const jsonLd = {
         courseWorkload: 'P7D',
       },
       numberOfLessons: 7,
-      teaches: ['AI Assistant Setup', 'OpenClaw Configuration', 'Skills Development', 'Automation'],
+      teaches: [
+        'AI Assistant Setup',
+        'OpenClaw Configuration',
+        'Skills Development',
+        'Automation',
+      ],
       isAccessibleForFree: true,
       availableLanguage: ['en', 'zh'],
     },
@@ -157,47 +182,96 @@ const jsonLd = {
       name: 'OpenClaw 7-Day Learning Path',
       numberOfItems: 7,
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Day 1: Meet OpenClaw', url: 'https://openclaw.meetai.fun/day/1' },
-        { '@type': 'ListItem', position: 2, name: 'Day 2: Installation', url: 'https://openclaw.meetai.fun/day/2' },
-        { '@type': 'ListItem', position: 3, name: 'Day 3: Give Your Assistant a Soul', url: 'https://openclaw.meetai.fun/day/3' },
-        { '@type': 'ListItem', position: 4, name: 'Day 4: Connect Your Digital Life', url: 'https://openclaw.meetai.fun/day/4' },
-        { '@type': 'ListItem', position: 5, name: 'Day 5: Skills Ecosystem', url: 'https://openclaw.meetai.fun/day/5' },
-        { '@type': 'ListItem', position: 6, name: 'Day 6: Automation & Heartbeat', url: 'https://openclaw.meetai.fun/day/6' },
-        { '@type': 'ListItem', position: 7, name: 'Day 7: Advanced Techniques', url: 'https://openclaw.meetai.fun/day/7' },
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Day 1: Meet OpenClaw',
+          url: 'https://openclaw.meetai.fun/day/1',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Day 2: Installation',
+          url: 'https://openclaw.meetai.fun/day/2',
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'Day 3: Give Your Assistant a Soul',
+          url: 'https://openclaw.meetai.fun/day/3',
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          name: 'Day 4: Connect Your Digital Life',
+          url: 'https://openclaw.meetai.fun/day/4',
+        },
+        {
+          '@type': 'ListItem',
+          position: 5,
+          name: 'Day 5: Skills Ecosystem',
+          url: 'https://openclaw.meetai.fun/day/5',
+        },
+        {
+          '@type': 'ListItem',
+          position: 6,
+          name: 'Day 6: Automation & Heartbeat',
+          url: 'https://openclaw.meetai.fun/day/6',
+        },
+        {
+          '@type': 'ListItem',
+          position: 7,
+          name: 'Day 7: Advanced Techniques',
+          url: 'https://openclaw.meetai.fun/day/7',
+        },
       ],
     },
   ],
-};
+}
+*/
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
       <head>
+        {/* 埋点 / SEO 增强已关闭 — 说明见 docs/埋点方案.md */}
         {/* Google AdSense */}
-        <meta name="google-adsense-account" content="ca-pub-1081201777589554" />
-        <Script
+        {/* <meta name="google-adsense-account" content="ca-pub-1081201777589554" /> */}
+        {/* <Script
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1081201777589554"
           strategy="afterInteractive"
           crossOrigin="anonymous"
-        />
+        /> */}
 
-        {/* Schema.org structured data */}
-        <script
+        {/* Schema.org structured data — 已关闭 */}
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        /> */}
+
+        {/* hreflang tags for i18n — 已关闭 */}
+        {/* <link
+          rel="alternate"
+          hrefLang="zh"
+          href="https://openclaw.meetai.fun"
         />
-        
-        {/* hreflang tags for i18n */}
-        <link rel="alternate" hrefLang="zh" href="https://openclaw.meetai.fun" />
-        <link rel="alternate" hrefLang="en" href="https://openclaw.meetai.fun/en" />
-        <link rel="alternate" hrefLang="x-default" href="https://openclaw.meetai.fun" />
-        
-        {/* Google tag (gtag.js) */}
-        <Script
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://openclaw.meetai.fun/en"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://openclaw.meetai.fun"
+        /> */}
+
+        {/* Google tag (gtag.js) — GA4 */}
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-86ESEQC7V8"
           strategy="afterInteractive"
         />
@@ -206,10 +280,10 @@ export default function RootLayout({
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-86ESEQC7V8');`}
-        </Script>
+        </Script> */}
 
         {/* Privacy-friendly analytics by Plausible */}
-        <Script
+        {/* <Script
           src="https://plausible.shipsolo.io/js/pa-JFzm3YyWo6Cak1n9mzePz.js"
           strategy="afterInteractive"
         />
@@ -217,11 +291,11 @@ gtag('config', 'G-86ESEQC7V8');`}
           {`window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)};
 plausible.init=plausible.init||function(i){plausible.o=i||{}};
 plausible.init();`}
-        </Script>
+        </Script> */}
       </head>
       <body className="font-sans">
         <Providers>{children}</Providers>
       </body>
     </html>
-  );
+  )
 }
