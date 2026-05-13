@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Providers from '@/components/Providers'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://openclaw.meetai.fun'),
@@ -240,12 +241,12 @@ export default function RootLayout({
       <head>
         {/* 埋点 / SEO 增强已关闭 — 说明见 docs/埋点方案.md */}
         {/* Google AdSense */}
-        {/* <meta name="google-adsense-account" content="ca-pub-1081201777589554" /> */}
-        {/* <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1081201777589554"
+        <meta name="google-adsense-account" content="ca-pub-7973278765363470" />
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7973278765363470"
           strategy="afterInteractive"
           crossOrigin="anonymous"
-        /> */}
+        />
 
         {/* Schema.org structured data — 已关闭 */}
         {/* <script
