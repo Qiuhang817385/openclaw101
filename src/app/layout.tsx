@@ -243,10 +243,10 @@ export default function RootLayout({
         {/* Google AdSense */}
         <meta name="google-adsense-account" content="ca-pub-7973278765363470" />
         <Script
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7973278765363470"
-          strategy="afterInteractive"
           crossOrigin="anonymous"
-        />
+        ></Script>
 
         {/* Schema.org structured data — 已关闭 */}
         {/* <script
